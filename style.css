@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+p {
+    font-size: 4em;
+}
+#emoji-grid{
+    display: grid;
+    grid-template-columns:  1fr  1fr 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 2em;
+    margin: 2rem;
+    padding: 20px;
+    background-color: rgb(250, 219, 250);
+}
+button{
+    width: 100%;
+    align-self: center;
+    height: 70px;
+    color: violet;
+    background-color: rgb(0, 0, 0);
+    grid-column: 1 / span4 ;
+}
+@media only screen and (max-width: 800px){
+    p {
+        font-size: 3em;
+    }
+    #emoji-grid{
+        display: grid;
+        grid-template-columns:   1fr 1fr 1fr 1fr;
+        grid-row: auto;
+        align-items: center;
+        justify-items: center;
+        grid-gap: 2em;
+        margin: 2rem;
+        padding: 20px;
+        background-color: rgb(250, 219, 250);
+    }
+    button{
+        width: 100%;
+        align-self: center;
+        height: 70px;
+        color: violet;
+        background-color: rgb(0, 0, 0);
+        grid-column: 1 / span4 ;
+    }
+}
